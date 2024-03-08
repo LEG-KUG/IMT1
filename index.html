@@ -1,0 +1,64 @@
+<html>
+
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PlaceClone</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="/js/place.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+
+  </head>
+
+  <body>
+
+    <div id="constraint">
+    <div style = "text-align:center;">
+
+    <canvas id="place" height="500" width="500"></canvas>
+
+    <canvas id="grid" height="500" width="500"></canvas>
+
+
+      <div class="controls">
+
+        X: <input type="number" min="0" max="50" id="x-coord">
+
+        Y: <input type="number" min="0" max="50" id="y-coord">
+
+        Color: <input type="color" id="color">
+
+        <button id="submit">Place Color</button>
+      </div>
+
+    </div>
+    </div>
+
+  </body>
+
+
+  <script type="text/javascript">
+
+    var cnv=document.getElementById("grid");
+
+    var ctx= cnv.getContext("2d");
+
+  for(var i=0; i<=500; i=i+10){
+
+    ctx.moveTo(i,0);
+
+    ctx.lineTo(i,500);
+
+    ctx.moveTo(0,i);
+
+    ctx.lineTo(500,i);
+
+    ctx.strokeStyle="#000000";
+    
+    ctx.stroke();
+  }
+
+  </script>
+
+</html>
