@@ -1,0 +1,76 @@
+#place {
+  top: 9em;
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  float: top;
+  left: 45em;
+  scale: 150%;
+}
+
+#grid {
+  top: 9em;
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  float: top;
+  left: 45em;
+  opacity: 5%;
+  scale: 150%;
+}
+
+.controls {
+  top: 50em;
+  left: 48em;
+  padding: 10px;
+  position: absolute;
+  align-self: center;
+  background-color: #C3BCB4;
+  border: 5px solid #D7D1C9;
+  border-radius: 100px;
+}
+
+#constraint {
+  background-color: #EEEBE8;
+  float: top;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  #place {
+    position: absolute;
+    left: -10px;
+    top: 5em;
+    scale: 90%;
+  }
+
+  #grid {
+    position: absolute;
+    left: -10px;
+    top: 5em;
+    scale: 90%;
+  }
+  
+  .controls {
+    left: 2em;
+    top: 37em;
+    scale: 100%;
+  }
+  
+  #constraint {
+width: 100%;
+  }
+
+}
