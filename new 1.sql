@@ -25,4 +25,3 @@ CREATE TABLE Pixels (
     FOREIGN KEY (UserID) REFERENCES Users(UserID),
     FOREIGN KEY (ColorID) REFERENCES Colors(ColorID)
 );
-
